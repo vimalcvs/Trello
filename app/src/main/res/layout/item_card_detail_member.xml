@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_board_content_marginBottom5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/item_board_content_padding10">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/item_card_detail_iv"
+            android:layout_width="@dimen/item_board_image_size60"
+            android:layout_height="@dimen/item_board_image_size60"
+            android:contentDescription="@null"
+            android:src="@drawable/img_employee_manages"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceImage"
+
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_board_name_layout_marginStart10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_card_detail_tv_member_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+
+                android:maxLines="1"
+
+                android:textSize="@dimen/item_board_name_text_size18"
+                tools:text="Member name" />
+
+            <TextView
+                android:id="@+id/item_card_detail_tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+
+                android:maxLines="1"
+
+                android:textSize="@dimen/member_item_email14"
+                tools:text="Email" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_card_detail_iv_selected_member"
+            android:layout_width="@dimen/member_item_iv_size30"
+            android:layout_height="@dimen/member_item_iv_size30"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/member_item_margin_end5"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_right"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_board_divider_height0_7"
+        android:layout_marginTop="@dimen/item_board_divider_marginTop5" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/drawer_main_height200"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/drawer_circle_iv"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceImage"
+            android:layout_width="@dimen/drawer_iv_circle80"
+            android:layout_height="@dimen/drawer_iv_circle80"
+            android:layout_marginHorizontal="@dimen/drawer_iv_circle_margin_horizontal16"
+            android:contentDescription="@string/circle_iv_image"
+            android:src="@drawable/img_user_placeholder" />
+
+        <TextView
+            android:id="@+id/drawer_tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/drawer_iv_circle_margin_horizontal16"
+            android:layout_marginTop="@dimen/drawer_user_name_margin_top5"
+            android:layout_marginBottom="@dimen/drawer_user_name_margin_bottom8"
+            android:ellipsize="end"
+            android:maxLines="1"
+
+            android:text="@string/app_name"
+
+            android:textSize="@dimen/drawer_user_name_text_size22" />
+    </LinearLayout>
+
+</LinearLayout>

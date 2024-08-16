@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_item_margin8"
+    android:elevation="@dimen/item_card_cv_elevation5"
+    android:orientation="vertical"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/card_item_view_label_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_card_view_height10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/card_item_tv_card_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/card_item_tv_padding10"
+
+            android:textSize="@dimen/description_text_size16"
+            tools:text="Card Name" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/card_item_rv_selected_member_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_item_rv_margin2"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

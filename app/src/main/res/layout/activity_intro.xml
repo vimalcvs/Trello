@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/intro_tv_app_name_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/app_name"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/intro_iv_employee"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/intro_image_height200"
+            android:contentDescription="@string/employee_managing_project"
+            android:src="@drawable/img_employee_manages" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/intro_greeting"
+
+            android:textSize="@dimen/tv_header25" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/description_margin_horizontal20"
+            android:layout_marginTop="@dimen/description_margin_top10"
+
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/description_line_space_extra5"
+            android:text="@string/intro_text_description"
+
+            android:textSize="@dimen/description_text_size16" />
+
+        <Button
+            android:id="@+id/intro_btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/description_margin_horizontal20"
+            android:layout_marginTop="@dimen/btn_sign_in_top50"
+
+
+            android:paddingVertical="8dp"
+            android:text="@string/sign_in_toolbar_text"
+            android:textAllCaps="true"
+
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/intro_btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/description_margin_horizontal20"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
+            android:paddingVertical="8dp"
+            android:text="@string/sign_up_toolbar_text"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

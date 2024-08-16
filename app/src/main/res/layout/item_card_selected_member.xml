@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/item_card_selected_member_cv_user"
+        android:layout_width="@dimen/item_card_selected_member_cv_size45"
+        android:layout_height="@dimen/item_card_selected_member_cv_size45"
+        android:layout_margin="@dimen/item_card_selected_member_ll_padding5"
+        android:src="@drawable/img_user_placeholder"
+        android:visibility="visible"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceImage"
+
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/item_card_selected_member_cv"
+        android:layout_width="@dimen/item_card_selected_member_cv_size20"
+        android:layout_height="@dimen/item_card_selected_member_cv_size20"
+        android:layout_marginHorizontal="@dimen/item_card_selected_member_cv_margin_horizontal1"
+        android:src="@drawable/img_user_placeholder"
+        android:visibility="gone"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceImage" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/item_card_selected_member_ib_add_user"
+        android:layout_width="@dimen/item_card_selected_member_cv_size45"
+        android:layout_height="@dimen/item_card_selected_member_cv_size45"
+        android:layout_margin="@dimen/item_card_selected_member_ll_padding5"
+        android:src="@drawable/ic_add_circle"
+        android:visibility="gone"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceImage" />
+
+</LinearLayout>
